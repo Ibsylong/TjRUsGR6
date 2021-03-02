@@ -17,6 +17,29 @@ namespace TjRUsGR6
         {
             var host = CreateHostBuilder(args).Build();
 
+            //using (var scope = host.Services.CreateScope())
+            //{
+            //    var services = scope.ServiceProvider;
+            //    try
+            //    {
+            //        var context = services.GetRequiredService<ClothingContext>();
+            //        DbInitializer.Initialize(context);
+            //    }
+            //    catch (Exception ex)
+            //    {
+            //        var logger = services.GetRequiredService<ILogger<Program>>();
+            //        logger.LogError(ex, "An error occurred while seeding the database.");
+            //    }
+            //}
+
+            CreateDbIfNotExists(host);
+
+            host.Run(); ;
+        }
+
+
+        private static void CreateDbIfNotExists(IHost host)
+        {
             using (var scope = host.Services.CreateScope())
             {
                 var services = scope.ServiceProvider;
@@ -28,11 +51,9 @@ namespace TjRUsGR6
                 catch (Exception ex)
                 {
                     var logger = services.GetRequiredService<ILogger<Program>>();
-                    logger.LogError(ex, "An error occurred while seeding the database.");
+                    logger.LogError(ex, "An error occurred creating the DB.");
                 }
             }
-
-            host.Run(); ;
         }
 
         public static IHostBuilder CreateHostBuilder(string[] args) =>

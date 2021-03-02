@@ -54,7 +54,7 @@ namespace TjRUsGR6.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("ClothingID,Title,Category,Type,Description,Price")] Clothing clothing)
+        public async Task<IActionResult> Create([Bind("ClothingID,Title,Category,Type,Description,Sizes,Colors,Price,Images")] Clothing clothing)
         {
             if (ModelState.IsValid)
             {
@@ -86,7 +86,7 @@ namespace TjRUsGR6.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("ClothingID,Title,Category,Type,Description,Price")] Clothing clothing)
+        public async Task<IActionResult> Edit(int id, [Bind("ClothingID,Title,Category,Type,Description,Sizes,Colors,Price,Images")] Clothing clothing)
         {
             if (id != clothing.ClothingID)
             {

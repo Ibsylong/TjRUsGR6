@@ -33,9 +33,24 @@
                 <span asp-validation-for="Description" class="text-danger"></span>
             </div>
             <div class="form-group">
+                <label asp-for="Sizes" class="control-label"></label>
+                <input asp-for="Sizes" class="form-control" />
+                <span asp-validation-for="Sizes" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Colors" class="control-label"></label>
+                <input asp-for="Colors" class="form-control" />
+                <span asp-validation-for="Colors" class="text-danger"></span>
+            </div>
+            <div class="form-group">
                 <label asp-for="Price" class="control-label"></label>
                 <input asp-for="Price" class="form-control" />
                 <span asp-validation-for="Price" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Images" class="control-label"></label>
+                <input asp-for="Images" class="form-control" />
+                <span asp-validation-for="Images" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <input type="submit" value="Create" class="btn btn-primary" />

@@ -25,7 +25,16 @@
                 @Html.DisplayNameFor(model => model.Description)
             </th>
             <th>
+                @Html.DisplayNameFor(model => model.Sizes)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Colors)
+            </th>
+            <th>
                 @Html.DisplayNameFor(model => model.Price)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Images)
             </th>
             <th></th>
         </tr>
@@ -46,7 +55,16 @@
                 @Html.DisplayFor(modelItem => item.Description)
             </td>
             <td>
+                @Html.DisplayFor(modelItem => item.Sizes)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Colors)
+            </td>
+            <td>
                 @Html.DisplayFor(modelItem => item.Price)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Images)
             </td>
             <td>
                 <a asp-action="Edit" asp-route-id="@item.ClothingID">Edit</a> |

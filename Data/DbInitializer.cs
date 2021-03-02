@@ -20,9 +20,9 @@ namespace TjRUsGR6.Data
 
             var clothings = new Clothing[]
             {
-            new Clothing{Title="Kjole1",Category="Dame",Type="Dress", Description="Dette er en kjole", Price=499.25},
-            new Clothing{Title="Skjorte1",Category="Herre",Type="Shirt", Description="Dette er en skjorte", Price=25},
-            new Clothing{Title="Bukser1",Category="Børn",Type="Pants", Description="Et par bukser", Price=50.69},
+            new Clothing{Title="Kjole1",Category="Dame",Type="Dress", Description="Dette er en kjole", Sizes="21 24 26 28", Price=499.25, Colors="red green blue", Images="img.png img.jpg"},
+            new Clothing{Title="Skjorte1",Category="Herre",Type="Shirt", Description="Dette er en skjorte", Sizes="21 24 26 28", Price=25, Colors="red green blue", Images="img.png img.jpg"},
+            new Clothing{Title="Bukser1",Category="Børn",Type="Pants", Description="Et par bukser", Sizes="21 24 26 28", Price=50.69, Colors="red green blue", Images="img.png img.jpg"},
             };
             foreach (Clothing c in clothings)
             {

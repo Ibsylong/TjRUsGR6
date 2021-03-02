@@ -16,12 +16,12 @@ namespace TjRUsGR6.Models
 
         public string Description { get; set; }
 
-        public ICollection<Size> Sizes { get; set; }
+        public string Sizes { get; set; }
 
-        public ICollection<Color> Colors { get; set; }
+        public string Colors { get; set; }
 
         public double Price { get; set; }
 
-        public ICollection<Image> Images { get; set; }
+        public string Images { get; set; }
     }
 }
