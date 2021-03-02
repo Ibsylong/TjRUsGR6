@@ -25,6 +25,21 @@ namespace TjRUsGR6.Controllers
             return View(await _context.Clothings.ToListAsync());
         }
 
+        public async Task<IActionResult> Dame()
+        {
+            return View();
+        }
+
+        public async Task<IActionResult> Herre()
+        {
+            return View();
+        }
+
+        public async Task<IActionResult> Børn()
+        {
+            return View();
+        }
+
         // GET: Clothings/Details/5
         public async Task<IActionResult> Details(int? id)
         {
