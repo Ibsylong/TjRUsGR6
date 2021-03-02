@@ -8,6 +8,6 @@ namespace TjRUsGR6.Models
     public class Image
     {
         public int ImageID { get; set; }
-        public string Imagelink { get; set; }
+        public string ImageLink { get; set; }
     }
 }

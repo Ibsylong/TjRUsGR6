@@ -8,6 +8,6 @@ namespace TjRUsGR6.Models
     public class Color
     {
         public int ColorID { get; set; }
-        public string Colorname { get; set; }
+        public string ColorName { get; set; }
     }
 }

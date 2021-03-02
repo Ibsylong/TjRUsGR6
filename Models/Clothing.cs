@@ -20,7 +20,7 @@ namespace TjRUsGR6.Models
 
         public ICollection<Color> Colors { get; set; }
 
-        public double Prize { get; set; }
+        public double Price { get; set; }
 
         public ICollection<Image> Images { get; set; }
     }
